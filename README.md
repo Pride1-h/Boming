@@ -48,10 +48,10 @@ To use the bomber type the following commands in Termux:
 ```
 pkg install git
 pkg install python
-git clone https://github.com/ThePride1-h-h/TBomb.git
+git clone https://github.com/ThePride1-h/BOMMING.git
 cd TBomb
-chmod +x TBomb.sh
-./TBomb.sh
+chmod +x BOMMING.sh
+./BOMMING.sh
 ```
 
 ### > For Linux:
@@ -66,37 +66,10 @@ Commands below provide instructions for Debian-based systems.
 To use the bomber type the following commands in Linux terminal:
 ```
 sudo apt install git
-git clone https://github.com/ThePride1-h-h/TBomb.git
+git clone https://github.com/ThePride1-h/Boming.git
 cd TBomb
-chmod +x TBomb.sh
-sudo bash TBomb.sh
-```
-
-### > For macOS:
-
-To use the bomber type the following commands in macOS terminal:
-```
-# Install Brew: 
-
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-# Install dependencys:
-
-brew install git
-brew install python3
-sudo easy_install pip
-sudo pip install --upgrade pip
-git clone https://github.com/ThePride1-h-h/TBomb.git
-cd TBomb
-chmod +x TBomb.sh
-
-# Missing Tools
-
-Toilet cannot be installed yet. But TBomb does still work.
-
-# Run TBomb:
-
-sudo bash TBomb.sh
+chmod +x BOMMING.sh
+ bash BOMMING.sh
 ```
 
 ## Demontrative Video:
@@ -105,9 +78,11 @@ sudo bash TBomb.sh
 - Watch International Bombing Method <a href="https://youtu.be/JqsHkyIcnPM">here</a><br>
 
 ## CONTRIBUTORS:
+**SpeedX**<br>
+[-] Mail At:ggspeedx29@gmail.com
 
 - **Pride1-h-h**<br>
-[-] Mail At: ggPride1-h-h29@gmail.com
+[-] Mail At:pride1h2k76@gmail.com
 
 - **DarkestEntropy**<br>
 [-] Check At: https://github.com/darkestentropy
@@ -131,7 +106,7 @@ sudo bash TBomb.sh
 Feel Free To Open An Issue...
 
 ```
-                 Mail: ggPride1-h-h29@gmail.com<br>
+                 Mail: pride1-h2k76@gmail.com<br>
        YouTube Channel: https://www.youtube.com/c/GyanaTech
 ```
 
