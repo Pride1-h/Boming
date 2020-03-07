@@ -477,7 +477,7 @@ def update():
     stuff_to_update = ['bomber.py', '.version']
     for fl in stuff_to_update:
         dat = urllib.request.urlopen(
-            "https://raw.githubusercontent.com/Thepride1-h/TBomb/master/" + fl).read()
+            "https://raw.githubusercontent.com/TheSpeedX/TBomb/master/" + fl).read()
         file = open(fl, 'wb')
         file.write(dat)
         file.close()
@@ -638,7 +638,7 @@ if nm == 0:
         if int(l) > maxlim:
             print('\n\n\tSorry Due To Misuse Of This Script We Only Provide ' +
                   str(maxlim) + ' SMS At Once...\n\n')
-            input('Press Enter To Exit...')
+             input('Press Enter To Exit...')
             os.system('rm *xxx* > /dev/null 2>&1')
             banner()
             exit()
